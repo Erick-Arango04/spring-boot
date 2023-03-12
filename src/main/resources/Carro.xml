@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!-- estos metadatos de configuración representan cómo usted, como desarrollador 
+        de aplicaciones, le dice al contenedor
+         Spring que cree instancias, configure y ensamble los objetos en su aplicación -->
+
+    <bean id="mot_1" class="com.curso.spring.spring.Ioc.Motor">
+    </bean>
+
+    <bean id="carro_1" class="com.curso.spring.spring.Ioc.Carro">
+        <property name="motor" ref="mot_1"/>
+    </bean>
+
+</beans>
