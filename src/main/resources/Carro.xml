@@ -9,10 +9,11 @@
          Spring que cree instancias, configure y ensamble los objetos en su aplicación -->
 
     <bean id="mot_1" class="com.curso.spring.spring.Ioc.Motor">
+
     </bean>
 
     <bean id="carro_1" class="com.curso.spring.spring.Ioc.Carro">
-        <property name="motor" ref="mot_1"/>
+        <constructor-arg ref="mot_1"/>
     </bean>
 
 </beans>

@@ -1,6 +1,8 @@
 package com.curso.spring.spring.Ioc;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Motor implements ParteCarro {
 
     @Override
@@ -13,5 +15,4 @@ public class Motor implements ParteCarro {
         return "Motor desde toString []";
     }
 
-    
 }
